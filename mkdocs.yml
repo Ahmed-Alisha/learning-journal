@@ -1,6 +1,38 @@
 site_name: Learning Journal
+site_url: https://<your-username>.github.io/<your-repo>   # optional, good for SEO
+site_description: Personal learning journal powered by MkDocs Material
+site_author: AHMED ALISHA
+
 theme:
   name: material
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - content.code.copy         # Adds a "copy" button to code blocks
+    - navigation.path
+
+  font:
+    text: Roboto Mono
+
+  palette: 
+    scheme: slate
+
+
+
+
+extra_css:
+  - assets/stylesheets/parallax.css
+  - assets/stylesheets/extra.css
+
+extra_javascript:
+  - assets/js/parallax.js
 
 nav:
   - Home: index.md
+  - About: about.md
+  - Git (Top): Git/git.md        # optional if you want two different Git pages
+  - Guides:
+      - Python: python.md
+      - Git: Git/git.md
+      - MkDocs: mkdocs.md

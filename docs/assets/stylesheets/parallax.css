@@ -1,0 +1,39 @@
+.mdx-parallax {
+  position: relative;
+  height: 50vh;     /* full viewport height */
+  width: 50vw;      /* full viewport width */
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+
+.mdx-parallax__layer {
+  position: absolute;
+  inset: 0;
+  will-change: transform;
+}
+
+.mdx-parallax__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: var(--md-image-position, center);
+  pointer-events: none;
+  user-select: none;
+}
+
+.mdx-parallax__blend {
+  background: linear-gradient(to bottom, transparent, #000 90%);
+  z-index: 10;
+  mix-blend-mode: multiply;
+}
+
+
+
+.md-content > .mdx-parallax {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  max-width: none;
+}

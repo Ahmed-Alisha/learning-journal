@@ -1,0 +1,18 @@
+/* Make the navigation tabs transparent */
+.md-tabs,
+.md-header,
+.md-header__inner,
+.md-tabs__list {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Optional: ensure text remains visible */
+.md-tabs__link {
+  color: var(--md-typeset-color) !important;
+}
+
+/* Remove the active tab highlight background */
+.md-tabs__link--active {
+  background: transparent !important;
+}
